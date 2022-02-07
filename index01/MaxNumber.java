@@ -1,4 +1,4 @@
-package study;
+package index01;
 
 import java.util.Scanner;
 
@@ -64,7 +64,6 @@ public class MaxNumber {
        }else {
            return b;
        }
-
     }
 
 }
