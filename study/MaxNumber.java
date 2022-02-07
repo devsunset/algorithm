@@ -15,6 +15,12 @@ public class MaxNumber {
         System.out.println("세번째 값 : ");
         int c = stdIn.nextInt();
 
+        System.out.println("최대값은 "+max3(a,b,c));
+        System.out.println("최소값은 "+min3(a,b,c));
+        System.out.println("중앙값은 "+med3(a,b,c));
+    }
+
+    public static int max3(int a, int b , int c){
         int max = a;
 
         if(b > max){
@@ -25,7 +31,40 @@ public class MaxNumber {
             max = c;
         }
 
-        System.out.println("최대값은 "+max);
+        return max;
+    }
+
+    public static int min3(int a, int b , int c){
+        int min = a;
+
+        if(b < min){
+            min = b;
+        }
+
+        if (c < min){
+            min = c;
+        }
+
+        return min;
+    }
+
+    public static int med3(int a, int b , int c){
+       if(a >= b){
+           if (b >= c){
+               return b;
+           }else if (a <= c){
+               return a;
+           }else {
+               return c;
+           }
+       }else if (a > c){
+           return a;
+       }else if (b > c){
+           return c;
+       }else {
+           return b;
+       }
+
     }
 
 }
