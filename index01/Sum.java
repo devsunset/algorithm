@@ -2,7 +2,7 @@ package index01;
 
 import java.util.Scanner;
 
-public class SumWhile {
+public class Sum {
     public static void main(String[] args){
         Scanner stdIn = new Scanner(System.in);
 
